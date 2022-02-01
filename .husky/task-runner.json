@@ -1,0 +1,13 @@
+{
+    "tasks": [
+        {
+            "name": "Проверка наработок перед пушем",
+            "command": "powershell",
+            "group": "pre-push",
+            "args": [
+                "-NoProfile", 
+                "-ExecutionPolicy", "RemoteSigned", 
+                "-Command", "./.scripts/pre-push-checking.ps1"]
+        }
+    ]
+}
